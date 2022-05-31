@@ -2,5 +2,6 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('', Prediction.as_view(), name = 'prediction'),
+    path('', index, name = 'index'),
+    path('result', result, name = 'result'),
 ]
